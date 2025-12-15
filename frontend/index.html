@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fraud Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Fraud Message Checker</h2>
+
+  <div class="chat-input">
+    <button class="add-file">+</button>
+
+    <textarea
+      id="message" placeholder="Paste message here..."rows="1"></textarea>
+
+    <button class="send-btn" onclick="checkFraud()">➤</button>
+  </div>
+
+  <h3 id="result"></h3>
+  <p id="reason"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
