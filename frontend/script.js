@@ -12,4 +12,16 @@ function checkFraud() {
     document.getElementById("result").innerText = "Result: " + result;
     document.getElementById("reason").innerText = "Reason: " + reason;
   }
-  
+  const addFileBtn = document.getElementById("addFileBtn");
+  const fileInput = document.getElementById("fileInput");
+  const fileName = document.getElementById("fileName");
+
+  addFileBtn.addEventListener("click", () => {
+    fileInput.click(); // open file picker
+  });
+
+  fileInput.addEventListener("change", () => {
+    if (fileInput.files.length > 0) {
+      fileName.textContent = "Attached: " + fileInput.files[0].name;
+    }
+  });

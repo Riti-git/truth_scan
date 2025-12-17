@@ -9,13 +9,15 @@
   <h2>Fraud Message Checker</h2>
 
   <div class="chat-input">
-    <button class="add-file">+</button>
+    <button class="add-file" id="addFileBtn">+</button>
 
     <textarea
       id="message" placeholder="Paste message here..."rows="1"></textarea>
 
     <button class="send-btn" onclick="checkFraud()">➤</button>
   </div>
+  <input type="file" id="fileInput" hidden>
+<p id="fileName"></p>
 
   <h3 id="result"></h3>
   <p id="reason"></p>
